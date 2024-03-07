@@ -5,7 +5,7 @@ dictionary = {}
 for _ in range(n):
     name, *marks = input('Enter the name and grades separated by space: ').split()
     dictionary[name] = list(map(float, marks))
-                             # Input the student name for which average needs to be calculated
+                             # Input the student name for which the average needs to be calculated
 query_name = input('Enter the student name to query: ')
                              # Calculate and print the average if the student is found, otherwise print a message
 average = sum(dictionary.get(query_name, [])) / len(dictionary.get(query_name, []))
